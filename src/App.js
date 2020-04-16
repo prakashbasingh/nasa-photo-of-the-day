@@ -1,7 +1,21 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./App.css";
+import Axios from "axios";
+const api_key ='takBkO9usLbQrDWvPcvd3IKuviGcJ3xtkT5FP2Hb'
+const url = 'https://api.nasa.gov/planetary/apod?api_key=takBkO9usLbQrDWvPcvd3IKuviGcJ3xtkT5FP2Hb'
+
 
 function App() {
+  //https://api.nasa.gov/planetary/apod?api_key=takBkO9usLbQrDWvPcvd3IKuviGcJ3xtkT5FP2Hb
+  useEffect (() =>{
+    Axios.get(url)
+      .then(success => {
+        console.log(res)
+      })
+      .catch (error => {
+        console.log('error')
+      })
+  }, [])
   return (
     <div className="App">
       <p>
