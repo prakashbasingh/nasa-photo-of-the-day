@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from "react";
 import "./App.css";
 import Axios from "axios";
+// import { Alert } from 'reactstrap';
 import NasaImageDetail from './components/NasaImageDetail.js';
+import Section from './components/Section'
+import Header from './components/Header'
 
 
 const api_key ='takBkO9usLbQrDWvPcvd3IKuviGcJ3xtkT5FP2Hb'
@@ -27,18 +30,18 @@ console.log('image data', imageData)
       })
   }, [])
   return (
-    <div className="App">
-      <header className = 'App-header'>
+    <Section className="App">
+      <Header className = 'App-header'>
         <div >
           <img className= 'nasa-logo' src = {nasaLogo} ></img>
         </div>
         <div>
-          <h1>NASA Photo of the Day</h1>
+          <h1 className = 'photoOfTheDay'>NASA Photo of the Day</h1>
         </div>
         <div >
           <img className = 'nasa-seal' src = {nasaSeal}></img>
         </div>
-      </header>
+      </Header>
      
      <NasaImageDetail date={imageData.date}
                       url={imageData.url} 
@@ -46,7 +49,7 @@ console.log('image data', imageData)
                       explanation={imageData.explanation}
                       />
 
-    </div>
+    </Section>
   );
 }
 

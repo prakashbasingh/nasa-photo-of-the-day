@@ -19,11 +19,13 @@
   height: 5rem;
 }
 .nasa-seal{
-  height: 5rem;
+  height:4.5rem;
 }
+
+
 .App-header {
   background-image: url("https://www.star2star.com/sites/default/files/headers/Space-Museum_0.png");
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 10vh;
   display: flex;
   /* flex-direction: column; */
@@ -34,6 +36,9 @@
   color: white;
 
 }
+
+
+
 .nasa-image{
    height: 50%;
    width: 100%;
