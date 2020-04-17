@@ -47,6 +47,7 @@ console.log('image data', imageData)
                       url={imageData.url} 
                       title={imageData.title}
                       explanation={imageData.explanation}
+                      copyright= {imageData.copyright}
                       />
 
     </Section>

@@ -42,6 +42,10 @@ h3{
   }
  
 }
+
+span{
+    margin-bottom:4rem;
+}
 `
 
 export default BodyContainer

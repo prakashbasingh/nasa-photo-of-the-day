@@ -16,6 +16,7 @@ const NasaImageDetail = (props)=> {
                 <img className = 'image' src = {props.url} />
                 <h3 className = 'title' > Title: {props.title}  </h3>
                 <p className = 'explanation'>Explanation: {props.explanation} </p>
+                <h6 className = 'copyright'>Copyright: {props.copyright}</h6>
              </BodyContainer>
     );
 
