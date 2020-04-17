@@ -11,6 +11,7 @@ const NasaImageDetail = (props)=> {
     console.log('any data???', props)
         return(
             <div>
+                <p>Date: {props.date}</p>
                 <img src = {props.url} />
                 <h3> Title: {props.title}  </h3>
                 <p>Explanation: {props.explanation} </p>

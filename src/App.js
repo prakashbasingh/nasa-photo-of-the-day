@@ -40,7 +40,8 @@ console.log('image data', imageData)
         </div>
       </header>
      
-     <NasaImageDetail url={imageData.url} 
+     <NasaImageDetail date={imageData.date}
+                      url={imageData.url} 
                       title={imageData.title}
                       explanation={imageData.explanation}
                       />
