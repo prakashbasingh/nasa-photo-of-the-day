@@ -20,6 +20,11 @@ padding: 1rem;
 
 img{
     box-shadow: 0 0 20px 8px gray;
+    object-fit: contain;
+    width: 100%;
+    @media (min-width: 800px){
+        width:80%;
+    }
 
 }
 
