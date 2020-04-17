@@ -34,6 +34,12 @@
   color: white;
 
 }
+.nasa-image{
+   height: 50%;
+   width: 100%;
+   margin: 5%;
+}
+
 
 .App-link {
   color: #61dafb;
