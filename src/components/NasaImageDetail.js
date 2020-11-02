@@ -13,7 +13,7 @@ const NasaImageDetail = (props)=> {
         return(
             <BodyContainer class = 'bodyContainer'>
                 <p className = 'date '>Date: {props.date}</p>
-                <img className = 'image' src = {props.url} />
+                <img className = 'image' src = {props.url} alt = "nasa todays cosmos"/>
                 <h3 className = 'title' > Title: {props.title}  </h3>
                 <p className = 'explanation'>Explanation: {props.explanation} </p>
                 <h6 className = 'copyright'>Copyright: {props.copyright}</h6>
