@@ -1,26 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function login() {
+const initialLoginInfo = {
+  username: "",
+  password: "",
+};
+
+export default function LoginPage() {
+  const [login, setLogin] = useState(initialLoginInfo);
+  console.log(login, "XXXXXXXXXXXXXXXXXXXXXXXXX");
+
+  const loginInputChange = (event) => {
+    setLogin({
+      ...login,
+      [event.target.name]: event.target.value,
+    });
+  };
+
   return (
     <div>
-      <label>Username</label>
-      <input
-        type="text"
-        name="username"
-        value={login.username}
-        placeholder="username"
-        onChange={loginInputChange}
-      />
-      <button>Submit</button>
-      <label>Password</label>
-      <input
-        type="password"
-        name="password"
-        value={login.username}
-        placeholder="username"
-        onChange={loginInputChange}
-      />
-      <button>Submit</button>
+      <div>Login Form</div>
+      <div>
+        <form>
+          <label>Username</label>
+          <input
+            type="text"
+            name="username"
+            value={login.username}
+            placeholder="username"
+            onChange={loginInputChange}
+          />
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            value={login.password}
+            placeholder="password"
+            onChange={loginInputChange}
+          />
+          <button>Submit</button>
+        </form>
+      </div>
     </div>
   );
 }
