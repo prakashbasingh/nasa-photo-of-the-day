@@ -16,6 +16,16 @@ const nasaSeal =
   "https://www.nasa.gov/sites/default/files/thumbnails/image/edu_what_is_nasa_emblem.jpg";
 
 function App() {
+  // document
+  //   .getElementsByClassName("backgroundColor")
+  //   .addEventListener("mouseover", mouseOver);
+  // document
+  //   .getElementsByClassName(".links")
+  //   .addEventListener("mouseover", mouseOver);
+
+  // function mouseOver() {
+  //   document.getElementById("backgroundColor").style.color = "red";
+  // }
   return (
     <Router>
       <Section className="App">
