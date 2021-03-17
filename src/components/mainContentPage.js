@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Axios from "axios";
 // import { Alert } from 'reactstrap';
 import NasaImageDetail from "./NasaImageDetail.js";
+import "./mainContentPage.css";
 
 export default function MainContentPage() {
   const nasaURL =
@@ -71,26 +72,32 @@ export default function MainContentPage() {
     setRandomDate(todaysDate);
   };
   return (
-    <div>
-      <div>
-        <button onClick={fetchTodaysImage}>Click for Today's Image</button>
-      </div>
-      <div>
-        <button onClick={randomDateGenerator}>Click For Random image</button>
-      </div>
-      <div>
-        <label>Enter a date</label>
-        <input
-          type="text"
-          name="date"
-          value={typedDate.date}
-          onChange={dateInputChange}
-          placeholder="Example 2020-19-6"
-        />
-        <button onClick={submitButton}>Submit Date</button>
+    <div className="container">
+      <div className="buttonAndForm">
+        <div>
+          <button onClick={fetchTodaysImage}>Click for Today's Image</button>
+        </div>
+        <div>
+          <button onClick={randomDateGenerator}>Click For Random image</button>
+        </div>
+        <div className="formContainer">
+          <div>
+            <label>Enter a specific date: </label>
+          </div>
 
-        <p>Date must be on or after 1995-6-16</p>
+          <input
+            type="text"
+            name="date"
+            value={typedDate.date}
+            onChange={dateInputChange}
+            placeholder="Example 2020-12-25"
+          />
+          <button onClick={submitButton}>Submit Date</button>
+
+          <span>Date must be on or after 1995-6-16</span>
+        </div>
       </div>
+
       {!imageData.date ? (
         <div>
           <div

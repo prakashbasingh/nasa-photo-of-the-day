@@ -18,7 +18,16 @@ const BodyContainer = styled.div`
       transition: all 1s ease-in-out;
     }
   }
-
+  .explanation {
+    color: yellow;
+    transition: all 1s ease-in-out;
+    margin: 2rem;
+    padding: 1rem;
+    &:hover {
+      color: red;
+      transition: all 1s ease-in-out;
+    }
+  }
   img {
     box-shadow: 0 0 20px 8px gray;
     object-fit: contain;

@@ -33,8 +33,50 @@ function App() {
         <Switch>
           <Route exact path="/">
             <div>
-              <h1>This is Home Page</h1>
+              <h1> Home Page</h1>
             </div>
+
+            <nav className="nav">
+              <div className="backgroundColor">
+                <div className="links">
+                  <div className="linkName">
+                    <a href="/mainContentPage">Main Page</a>
+                  </div>
+
+                  <div className="spanDiv">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div className="backgroundColor">
+                <div className="links">
+                  <div className="linkName">
+                    <a href="/signupPage">Signup Page</a>
+                  </div>
+
+                  <div className="spanDiv">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div className="backgroundColor">
+                <div className="links">
+                  <div className="linkName">
+                    <a href="/loginPage">Login Page</a>
+                  </div>
+
+                  <div className="spanDiv">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </nav>
           </Route>
 
           <Route exact path="/signupPage" component={SignupPage} />

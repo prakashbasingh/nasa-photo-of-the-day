@@ -33,7 +33,7 @@ export default function SignupPage() {
       .catch((err) => {
         console.log(err, "err err err err");
       });
-    history.push("/mainContentPage");
+    history.push("/loginPage");
   };
 
   return (

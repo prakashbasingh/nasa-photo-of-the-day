@@ -55,3 +55,50 @@
     transform: rotate(360deg);
   }
 }
+
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh
+}
+.links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  
+  border-radius: 50%;
+   background-image: url("https://th.bing.com/th/id/R5eaf5e8213ec1702a56e2341d5b9ea70?rik=ZhoFhrRAakO79Q&riu=http%3a%2f%2fwww.technocrazed.com%2fwp-content%2fuploads%2f2015%2f12%2fHD-Space-Wallpaper-For-Background-22.jpg&ehk=iv7gtnoaqhXIruGDnJsHamzb4Ixps4%2bV9tmmnbvuzvI%3d&risl=&pid=ImgRaw");
+   background-position: center;
+   background-size: cover
+}
+.links .linkName  a{
+  font-family: 'Chango', cursive;
+  font-size:1.62rem;
+  color:limegreen;
+  text-shadow: 4px 4px #000000;
+  text-decoration: none;
+}
+.backgroundColor{
+ background: chartreuse;
+ border-radius: 50%;
+
+}
+.spanDiv{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spanDiv > div{
+  border: 2px solid black;
+ width:20px;
+ height:20px;
+ background:red;
+ margin: 5px;
+ box-shadow: 5px 5px 5px gold;
+}
