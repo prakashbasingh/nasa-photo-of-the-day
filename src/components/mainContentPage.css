@@ -1,0 +1,41 @@
+.container{
+    width: 80%;
+}
+.buttonAndForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color:indianred;
+    border-radius: 1rem;
+    padding: 10px;
+}
+.formContainer{
+    display:flex;
+    flex-direction: row;
+     justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.formContainer > label{
+color:
+}
+.formContainer > span{
+
+}
+.formContainer > input{
+    margin: 5px;
+}
+button{
+    background: lawngreen;
+    border: 1px solid gold;
+    border-radius: 1rem;
+}
+button:hover{
+    background: black;
+    border: 1px solid red;
+    color: white;
+    
+    
+
+}
